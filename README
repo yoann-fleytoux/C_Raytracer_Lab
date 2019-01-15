@@ -1,0 +1,6 @@
+Nécessite freeimage 
+http://freeimage.sourceforge.net/
+Si vous avez des problèmes pour l'installer, dites moi sur quel system/compilo je verrai ce que je peux faire.
+
+g++ -g  -O3 main.c vector.c scene.c raytracer.c -lfreeimage -I FreeImage/Dist/ -L FreeImage/Dist/ -lm -DUSE_FREEIMAGE -o mrt
+g++ -g  -O3 main.c vector.c scene.c raytracer.c -lm -o mrt
